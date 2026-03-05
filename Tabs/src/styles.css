@@ -1,0 +1,86 @@
+/* styles.css */
+
+:root {
+  --border: #e5e7eb;
+  --border2: #d1d5db;
+  --bg: #ffffff;
+  --bgSoft: #f9fafb;
+  --text: #111827;
+  --muted: rgba(17, 24, 39, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.page {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+.header {
+  margin-bottom: 14px;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sub {
+  margin: 6px 0 0;
+  opacity: 0.75;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: var(--bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* Tabs */
+.tabList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tabBtn {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border2);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.tabBtn:focus {
+  outline: 2px solid #9ca3af;
+  outline-offset: 2px;
+}
+
+.tabBtn.active {
+  background: var(--bgSoft);
+  border-color: #9ca3af;
+}
+
+.tabPanel {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+  background: #fff;
+}
